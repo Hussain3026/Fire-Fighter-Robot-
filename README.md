@@ -29,59 +29,59 @@ This project demonstrates practical implementation of IoT systems, embedded prog
 
 Arduino UNO / Nano
 
-ESP32-S (Bluetooth communication)
+   1.ESP8266 (Bluetooth communication)
 
-ESP32-CAM (Live video streaming over Wi-Fi)
+   2.ESP32-CAM (Live video streaming over Wi-Fi)
 
-L298N Motor Driver
+   3.L298N Motor Driver
 
-Flame Sensors (Left, Center, Right)
+   4.Flame Sensors (Left, Center, Right)
 
-Relay Module & Water Pump
+   5.Relay Module & Water Pump
 
-DC Motors & Chassis
+   6.DC Motors & Chassis
 
-Embedded C/C++ (Arduino IDE)
+   7.Embedded C/C++ (Arduino IDE)
 
-UART Serial Communication
+   8.UART Serial Communication
 
-IoT-based connectivity concepts
+   9.IoT-based connectivity concepts
 
  How It Works
-Manual Mode
+  Manual Mode
 
-User connects mobile phone to ESP32-S via Bluetooth.
+   1.User connects mobile phone to ESP32-S via Bluetooth.
 
-Sends commands (F, B, L, R, S, P) to control movement and pump.
+   2.Sends commands (F, B, L, R, S, P) to control movement and pump.
 
-Arduino 1 drives motors through L298N motor driver.
+   3.ESP8266 drives motors through L298N motor driver.
 
-Automatic Mode
+  Automatic Mode
 
-ESP32-CAM streams live video for remote monitoring.
+   1.ESP32-CAM streams live video for remote monitoring.
 
-Flame sensors connected to Arduino 2 detect nearby fire.
+   2.Flame sensors connected to Arduino detect nearby fire.
 
-System automatically stops and activates the water pump.
+   3.System automatically stops and activates the water pump.
 
-Buzzer and LED indicators provide visual/audio alerts.
+   4.Buzzer and LED indicators provide visual/audio alerts.
 
 Architecture
 
 The system uses two microcontrollers to ensure smooth operation:
 
-Arduino 1 + ESP32-S → Handles Bluetooth and robot movement.
+   ->ESP8266 → Handles Bluetooth and robot movement.
 
-Arduino 2 + ESP32-CAM → Handles flame detection, alarms, and live streaming.
+   ->Arduino + ESP32-CAM → Handles flame detection, alarms, and live streaming.
 
-This architecture prevents Wi-Fi and Bluetooth conflicts on a single ESP32 board and improves system reliability.
+ This architecture prevents Wi-Fi and Bluetooth conflicts on a single ESP32 board and improves system reliability.
 
- Project Outcome
+Project Outcome
 
-Successfully implemented real-time Bluetooth control.
+  ->Successfully implemented real-time Bluetooth control.
 
-Achieved stable Wi-Fi video streaming.
+ ->Achieved stable Wi-Fi video streaming.
+ 
+ ->Automatic flame detection and fire suppression within 3–5 seconds.
 
-Automatic flame detection and fire suppression within 3–5 seconds.
-
-Demonstrated integration of IoT communication with robotics automation
+ ->Demonstrated integration of IoT communication with robotics automation
