@@ -1,5 +1,5 @@
 # Fire-Fighter-Robot-
-IoT-based Fire Fighter Robot using Arduino, ESP32-S, and ESP32-CAM. Features Bluetooth remote control, live Wi-Fi video streaming, and automatic flame detection with water pump suppression. Dual-controller architecture ensures smooth Bluetooth and Wi-Fi operation, integrating embedded systems, IoT communication, and robotic automation.
+IoT-based Fire Fighter Robot using Arduino, ESP8266 wifi, and ESP32-CAM. Features Bluetooth remote control, live Wi-Fi video streaming, and automatic flame detection with water pump suppression. Dual-controller architecture ensures  Wi-Fi operation, integrating embedded systems, IoT communication, and robotic automation.
 
 This project presents a dual-controller IoT-based Fire Fighter Robot designed to detect and extinguish fire using both manual and automatic modes. The system integrates Arduino microcontrollers, ESP32-S (Bluetooth), and ESP32-CAM (Wi-Fi streaming) to enable remote navigation, live video monitoring, and automatic fire suppression.
 
@@ -9,9 +9,9 @@ This project demonstrates practical implementation of IoT systems, embedded prog
 
  Key Features
 
-   1.Dual-controller architecture (Arduino 1 & Arduino 2)
+   1.Dual-controller architecture 
 
-   2.Bluetooth-based remote control using ESP32-S
+   2.Wifi-based remote control using ESP8266
 
    3.Live video streaming via ESP32-CAM (Wi-Fi)
 
@@ -29,7 +29,7 @@ This project demonstrates practical implementation of IoT systems, embedded prog
 
 Arduino UNO / Nano
 
-   1.ESP8266 (Bluetooth communication)
+   1.ESP8266 (Wifi communication)
 
    2.ESP32-CAM (Live video streaming over Wi-Fi)
 
